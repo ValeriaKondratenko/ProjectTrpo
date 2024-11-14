@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pryga Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+   
+    <section id="hero-container">
+        <button class="go-back-registr go-back-success" type="button" onclick="window.location.href='index.html'">
+            <i class='bx bx-left-arrow-alt'></i>
+        </button>
+        <div class="text-section">
+            <h1>Добро Пожаловать</h1>
+            <p>Введите свою почту и пароль для регистрации</p>
+            <form class="login-form">
+                <label for="user" class="label">Имя пользователя</label>
+                <input id="user" type="text" class="input" placeholder="Введите никнейм">
+                <label for="email">Почта</label>
+                <input type="email" id="email" name="email" placeholder="Введите электронную почту">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" placeholder="Введите пароль">
+                <label for="password">Проверка пароля</label>
+                <input type="password" id="password" name="password" placeholder="Повторите пароль">
+
+                <button type="submit">Зарегестрироваться</button>
+                <p class="register-link">Уже есть аккаунт? <a href="login.html">Войти</a></p>
+            </form>
+        </div>
+        
+        <div id="logo-hero">
+
+        </div>
+
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
