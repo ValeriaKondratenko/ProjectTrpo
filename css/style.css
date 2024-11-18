@@ -385,7 +385,8 @@ header .image-text .header-text {
     transition: transform 0.3s ease;
 }
 
-.card:hover {
+.card:hover,
+.fav-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
@@ -397,7 +398,8 @@ header .image-text .header-text {
     border-radius: 4px;
 }
 
-.card p {
+.card p,
+.fav-card p {
     margin-top: 10px;
     font-size: 14px;
     text-align: center;
@@ -602,9 +604,6 @@ header .image-text .header-text {
     margin-left: 140px;
 }
 
-
-
-
 #logo-hero {
     width: 100%;
     background-image: url("../img/logreg1.png");
@@ -615,5 +614,174 @@ header .image-text .header-text {
     align-items: center;
     justify-content: center;
 }
+
+/*footer*/
+/* .footer-step {
+    margin-top: 400px;
+} */
+
+#footer-main {
+    background-color:#ABAE98;
+    height: 50vh;
+    padding: 40px 110px;
+}
+
+.footer-web {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 500px;
+
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.footer-col a {
+    color: #000;
+    list-style: none;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 5px;
+    line-height: 2.0;
+    transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+    color: #fff;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 580px;
+    margin-top: -140px;
+}
+
+.footer-logo img{
+    width: 900px
+}
+
+/*favorites*/
+
+#favorites-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+.container-fav {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 -100px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.scroll-favorites {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.fav-card {
+    flex: 0 1 calc(33.333% - 20px);
+    max-width: 250px;
+    min-width: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    margin: 0; 
+}
+
+.fav-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Медиа-запрос для адаптивности */
+@media (max-width: 1200px) {
+    .fav-card {
+        flex: 0 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .fav-card {
+        flex: 0 1 calc(100% - 20px);
+    }
+}
+
+/*favorites tittle button*/
+
+.go-back-favorites {
+    --button-color: #000;
+    --button-background-hover: #9A9C82;
+    --button-background: #ABAE98;
+
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    padding: 10px 30px;
+    margin: 10px;
+    background: var(--button-background);
+    color: var(--button-color);
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 3px #231F20;
+    margin-bottom: 30px;
+    margin-left: -50px;
+}
+
+.go-back-favorites i {
+    font-size: 24px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.go-back-favorites h4 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.go-back-favorites:hover,
+.go-back-favorites i:hover,
+.go-back-favorites h4:hover {
+    background: var(--button-background-hover);
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
 
 
